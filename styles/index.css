@@ -78,7 +78,7 @@
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.parallax__content {
+/* .parallax__content {
     position: absolute;
     top: 10px;
     left: 0;
@@ -88,7 +88,7 @@
     transform: translate3d(0px, 0px, 200px) scale(.8);
     text-align: end;
     width: 100%;
-}
+} */
 .parallax__head {    /* надо изменить */
     color: #fff;    
     margin: auto;
@@ -104,36 +104,33 @@
 }
 .parallax__image{    
     position: absolute;    
-    -webkit-transform: translate(-50%, -30%);
-    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-40%, -30%);
+    transform: translate(-40%, -50%);
 }
 .parallax__image__01 {
     left: 50%;
-    top: 55%;
-    opacity: 1;
+    top: 65%;    
 }   
-.parallax__image__02 {
-      
+.parallax__image__02 {      
     left: 20%;
-    top: 30%;
+    top: 40%;
     opacity: .8;
 }
-
 .parallax__image__03 {
     left: 60%;
-    top: 150%;
+    top: 250%;
     opacity:.8;
 }
 
 .parallax__image__04 {
     left: 20%;
-    top: 250%;
+    top: 150%;
     opacity: .8;
 }
 
 .parallax__image__05 {
     left: 90%;
-    top: 40%;
+    top: 60%;
     opacity: .8;
 }
 
