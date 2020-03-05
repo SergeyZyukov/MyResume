@@ -1,9 +1,11 @@
 @import url(./popup/popup.css);
+
 .root {
     background-color: black;
     min-height: 100vh;
     font-family: 'Inter';
     color: #fff;
+    padding-top: 2%;
     padding-bottom: 194px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,19 +43,18 @@
     align-items: center;   
   }
   
-.user-info__photo {
+  .user-info__photo {
     width: 150px;
     height: 150px;
     min-width: 150px;
     border-radius: 50%; 
-    
     background-size: cover;
     background-position: center;
     cursor: pointer;
     transition: transform .3s linear;  
   }
   
-  .user-info__photo:hover:after{
+  .user-info__photo:hover{
     transform: scale(1.02);
   }
   
@@ -73,8 +74,7 @@
 }
 .parallax__group {
     position: relative;
-    min-height: 600px;
-    max-height: 1700px;     
+    min-height: 700px;      
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
@@ -85,14 +85,14 @@
     right: 0;
     bottom: 0;
     z-index: 10;
-    transform: translate3d(0px, 0px, 100px) scale(.6);
+    transform: translate3d(0px, 0px, 200px) scale(.8);
     text-align: end;
     width: 100%;
 }
-.parallax__head {    
+.parallax__head {    /* надо изменить */
     color: #fff;    
     margin: auto;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
 }
 .parallax__layer {
@@ -104,53 +104,53 @@
 }
 .parallax__image{    
     position: absolute;    
-    -webkit-transform: translate(-50%, -60%);
-    transform: translate(-50%, -60%);
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
 }
 .parallax__image__01 {
     left: 50%;
-    top: 50%;
-    opacity: .9;
+    top: 55%;
+    opacity: 1;
 }   
 .parallax__image__02 {
-    width: 60%;   
-    left: 10%;
-    top: 90%;
+      
+    left: 20%;
+    top: 30%;
     opacity: .8;
 }
 
 .parallax__image__03 {
-    left: 50%;
-    top: 30%;
+    left: 60%;
+    top: 150%;
     opacity:.8;
 }
 
 .parallax__image__04 {
-    left: 100%;
-    top: 110%;
+    left: 20%;
+    top: 250%;
     opacity: .8;
 }
 
 .parallax__image__05 {
-    left: 40%;
-    top: 170%;
+    left: 90%;
+    top: 40%;
     opacity: .8;
 }
 
 #parallax__background{
     z-index: 2;  
-    -webkit-transform: translateZ(-80px) scale(2);
-    transform: translateZ(-80px) scale(2);    
+    -webkit-transform: translateZ(-80px) scale(2.5);
+    transform: translateZ(-80px) scale(2.5);    
 }
 #parallax__layer__01{
     z-index: 3;
     -webkit-transform: translateZ(0) scale(.7);
-    transform: translateZ(0) scale(.6);    
+    transform: translateZ(0) scale(.7);    
 }
 #parallax__layer__02 {
     z-index: 1;  
-    -webkit-transform: translateZ(60px) scale(.4);
-    transform: translateZ(60px) scale(.4);    
+    -webkit-transform: translateZ(60px) scale(.5);
+    transform: translateZ(60px) scale(.5);    
 }
 
 #parallax__layer__03 {
@@ -161,6 +161,6 @@
 
 #parallax__layer__04 {
     z-index: 2;  
-    -webkit-transform: translateZ(80px) scale(.4);
-    transform: translateZ(80px) scale(.4);    
+    -webkit-transform: translateZ(80px) scale(.5);
+    transform: translateZ(80px) scale(.5);    
 }
