@@ -1,0 +1,166 @@
+@import url(./popup/popup.css);
+.root {
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Inter';
+    color: #fff;
+    padding-bottom: 194px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .root {
+      padding-bottom: 140px;
+    }
+  }
+
+.root__section {
+    width: calc(100% - 400px);
+    margin: auto;    
+  }
+  
+  @media screen and (max-width: 980px) {
+    .root__section {
+      width: 90%;
+    }
+  }  
+
+.header {
+    min-height: 132px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #A5A5A5;
+    margin-bottom: 50px;
+  }  
+
+.title__header {
+    min-height: 32px;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;   
+  }
+  
+.user-info__photo {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    border-radius: 50%; 
+    
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform .3s linear;  
+  }
+  
+  .user-info__photo:hover:after{
+    transform: scale(1.02);
+  }
+  
+  @media screen and (max-width: 980px) {
+    .user-info__photo {
+      margin-top: 40px;
+    }
+  }
+
+/* _____________PARALLAX_________________ */
+.parallax {
+    height: 100%;     
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+.parallax__group {
+    position: relative;
+    min-height: 600px;
+    max-height: 1700px;     
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.parallax__content {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transform: translate3d(0px, 0px, 100px) scale(.6);
+    text-align: end;
+    width: 100%;
+}
+.parallax__head {    
+    color: #fff;    
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.parallax__image{    
+    position: absolute;    
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+}
+.parallax__image__01 {
+    left: 50%;
+    top: 50%;
+    opacity: .9;
+}   
+.parallax__image__02 {
+    width: 60%;   
+    left: 10%;
+    top: 90%;
+    opacity: .8;
+}
+
+.parallax__image__03 {
+    left: 50%;
+    top: 30%;
+    opacity:.8;
+}
+
+.parallax__image__04 {
+    left: 100%;
+    top: 110%;
+    opacity: .8;
+}
+
+.parallax__image__05 {
+    left: 40%;
+    top: 170%;
+    opacity: .8;
+}
+
+#parallax__background{
+    z-index: 2;  
+    -webkit-transform: translateZ(-80px) scale(2);
+    transform: translateZ(-80px) scale(2);    
+}
+#parallax__layer__01{
+    z-index: 3;
+    -webkit-transform: translateZ(0) scale(.7);
+    transform: translateZ(0) scale(.6);    
+}
+#parallax__layer__02 {
+    z-index: 1;  
+    -webkit-transform: translateZ(60px) scale(.4);
+    transform: translateZ(60px) scale(.4);    
+}
+
+#parallax__layer__03 {
+    z-index: 3;  
+    -webkit-transform: translateZ(-50px) scale(.5);
+    transform: translateZ(-50px) scale(.5);    
+}
+
+#parallax__layer__04 {
+    z-index: 2;  
+    -webkit-transform: translateZ(80px) scale(.4);
+    transform: translateZ(80px) scale(.4);    
+}
