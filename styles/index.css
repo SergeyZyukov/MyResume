@@ -74,7 +74,7 @@
 }
 .parallax__group {
     position: relative;
-    min-height: 700px;      
+    min-height: 660px;      
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
@@ -124,14 +124,14 @@
 
 .parallax__image__04 {
     left: 20%;
-    top: 150%;
+    top: 170%;
     opacity: .8;
 }
 
 .parallax__image__05 {
-    left: 90%;
-    top: 60%;
-    opacity: .8;
+    left: 70%;
+    top: 90%;
+    opacity: .7;
 }
 
 #parallax__background{
